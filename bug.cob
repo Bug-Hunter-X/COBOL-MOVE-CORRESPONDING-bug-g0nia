@@ -1,0 +1,3 @@
+MOVE CORRESPONDING WS-DATA TO DB-RECORD.
+
+* Assume WS-DATA and DB-RECORD have different structures.  In COBOL, MOVE CORRESPONDING only moves fields with the same name and data type.  If there are fields with the same name but different data types or additional fields in one record, MOVE CORRESPONDING can cause data truncation, unexpected data conversions, or simply miss the intended data transfer.  This is especially tricky with nested structures.
